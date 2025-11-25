@@ -5,6 +5,8 @@ from FMCopilot.util import load_instruction_from_file
 from FMCopilot.tools import filter_rabbitmq_events
 from FMCopilot.analysis_tool import calculate_kpi_insights
 
+def greet(name: str) -> str:
+    return f"Hello! I am FMCopilot, ready to assist with your facility monitoring queries."
 rabbitmq_agent = LlmAgent(
     name = "RabbitMQEventFilterAgent",
     model = "gemini-2.0-flash",
@@ -29,7 +31,8 @@ root_agent = LlmAgent(
     name = "FMCopilot",
     model = "gemini-2.0-flash",
     description="An AI assistant that executes a two-step pipeline for Factory Monitoring KPI analysis.",
-    instruction=""" You are the FMCopilot orchestrator. Your task is to execute the full KPI analysis pipeline in two sequential steps to answer the user's query:
+    instruction=""" Start Conversation with greeting the user
+    You are the FMCopilot orchestrator. Your task is to execute the full KPI analysis pipeline in two sequential steps to answer the user's query:
 
 STEP 1: **Data Extraction.** Run 'RabbitMQEventFilterAgent' to retrieve the raw log data. This agent's tool will output a clean JSON string of logs into State['filtered_events'].
 
@@ -37,4 +40,5 @@ STEP 2: **Analysis and Reporting.** Instruct the 'kpi_analyst' agent to execute 
 
 Finally, present the output stored in State['kpi_analysis'] to the user.
 """,
-    sub_agents=[rabbitmq_agent, analysis_agent])
+    sub_agents=[rabbitmq_agent, analysis_agent],
+    tools=[greet])

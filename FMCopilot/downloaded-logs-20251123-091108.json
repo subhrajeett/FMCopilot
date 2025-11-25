@@ -2,7 +2,7 @@
   {
     "insertId": "u6b111q6t0n0y",
     "jsonPayload": {
-      "log": "2025-11-21 16:59:16.892 [INF]  RabbitMQ [SendMessage] -- Sent message: {\"id\":\"NC11 FINAL_LINE\",\"PlantName\":\"Wolverhampton\",\"ProductionShop\":\"EPMC\",\"FacilityBlock\":\"NC11\",\"Department\":\"NC11\",\"Master\":\"NC11\",\"ProductionLine\":\"FINAL_LINE\",\"DeviceType\":\"ProductionLine\",\"DeviceName\":\"FINAL_LINE\",\"EventName\":\"ProductionTotalPartCount\",\"EventOccured\":\"2025-11-21T16:59:16\",\"EventPair\":null,\"EventArgs\":{\"Value\":39.0}} to exchange: jlr-man-digitalfactory-prod-kpicalculation-events, routingKey: kpicalculation.event.final_line.productiontotalpartcount",
+      "log": "2025-11-25 08:50:16.892 [INF]  RabbitMQ [SendMessage] -- Sent message: {\"id\":\"NC11 FINAL_LINE\",\"PlantName\":\"Wolverhampton\",\"ProductionShop\":\"EPMC\",\"FacilityBlock\":\"NC11\",\"Department\":\"NC11\",\"Master\":\"NC11\",\"ProductionLine\":\"FINAL_LINE\",\"DeviceType\":\"ProductionLine\",\"DeviceName\":\"FINAL_LINE\",\"EventName\":\"ProductionTotalPartCount\",\"EventOccured\":\"2025-11-25T08:50:16\",\"EventPair\":null,\"EventArgs\":{\"Value\":39.0}} to exchange: jlr-man-digitalfactory-prod-kpicalculation-events, routingKey: kpicalculation.event.final_line.productiontotalpartcount",
       "logtag": "F"
     },
     "resource": {
@@ -16,7 +16,32 @@
         "cluster_name": "prod-user-cls-gbwol"
       }
     },
-    "timestamp": "2025-11-21T16:59:17",
+    "timestamp": "2025-11-25T08:50:17",
+    "labels": {
+      "k8s-pod/app": "kpicalculationfinalline",
+      "k8s-pod/pod-template-hash": "59dff845b6"
+    },
+    "logName": "projects/jlr-man-digitalfactory-prod/logs/stdout",
+    "receiveTimestamp": "2025-11-21T16:59:18.067332219Z"
+  },
+  {
+    "insertId": "u6b111q6t0n0y",
+    "jsonPayload": {
+      "log": "2025-11-25 08:55:16.892 [INF]  RabbitMQ [SendMessage] -- Sent message: {\"id\":\"NC11 FINAL_LINE\",\"PlantName\":\"Wolverhampton\",\"ProductionShop\":\"EPMC\",\"FacilityBlock\":\"NC11\",\"Department\":\"NC11\",\"Master\":\"NC11\",\"ProductionLine\":\"FINAL_LINE\",\"DeviceType\":\"ProductionLine\",\"DeviceName\":\"FINAL_LINE\",\"EventName\":\"ProductionTotalPartCount\",\"EventOccured\":\"2025-11-25T08:55:16\",\"EventPair\":null,\"EventArgs\":{\"Value\":40.0}} to exchange: jlr-man-digitalfactory-prod-kpicalculation-events, routingKey: kpicalculation.event.final_line.productiontotalpartcount",
+      "logtag": "F"
+    },
+    "resource": {
+      "type": "k8s_container",
+      "labels": {
+        "project_id": "jlr-man-digitalfactory-prod",
+        "container_name": "kpicalculationfinalline",
+        "location": "europe-west2",
+        "namespace_name": "prod-gbwol-facmon",
+        "pod_name": "kpicalculationfinalline-59dff845b6-b4th6",
+        "cluster_name": "prod-user-cls-gbwol"
+      }
+    },
+    "timestamp": "2025-11-25T08:55:17",
     "labels": {
       "k8s-pod/app": "kpicalculationfinalline",
       "k8s-pod/pod-template-hash": "59dff845b6"
@@ -27,7 +52,7 @@
   {
     "insertId": "19b84tq2w2360",
     "jsonPayload": {
-      "log": "2025-11-21 16:59:16.892 [INF]  RabbitMQ [SendMessage] -- Sent message: {\"id\":\"NC11 FINAL_LINE\",\"PlantName\":\"Wolverhampton\",\"ProductionShop\":\"EPMC\",\"FacilityBlock\":\"NC11\",\"Department\":\"NC11\",\"Master\":\"NC11\",\"ProductionLine\":\"FINAL_LINE\",\"DeviceType\":\"ProductionLine\",\"DeviceName\":\"FINAL_LINE\",\"EventName\":\"OperationTotalPartCount\",\"EventOccured\":\"2025-11-21T16:59:16\",\"EventPair\":null,\"EventArgs\":{\"Value\":39.0}} to exchange: jlr-man-digitalfactory-prod-kpicalculation-events, routingKey: kpicalculation.event.final_line.operationtotalpartcount",
+      "log": "2025-11-25 09:10:16.892 [INF]  RabbitMQ [SendMessage] -- Sent message: {\"id\":\"NC11 FINAL_LINE\",\"PlantName\":\"Wolverhampton\",\"ProductionShop\":\"EPMC\",\"FacilityBlock\":\"NC11\",\"Department\":\"NC11\",\"Master\":\"NC11\",\"ProductionLine\":\"FINAL_LINE\",\"DeviceType\":\"ProductionLine\",\"DeviceName\":\"FINAL_LINE\",\"EventName\":\"OperationTotalPartCount\",\"EventOccured\":\"2025-11-25T09:10:16\",\"EventPair\":null,\"EventArgs\":{\"Value\":41.0}} to exchange: jlr-man-digitalfactory-prod-kpicalculation-events, routingKey: kpicalculation.event.final_line.operationtotalpartcount",
       "logtag": "F"
     },
     "resource": {
@@ -41,7 +66,7 @@
         "cluster_name": "prod-user-cls-gbwol"
       }
     },
-    "timestamp": "2025-11-21T16:59:18",
+    "timestamp": "2025-11-25T09:10:17",
     "labels": {
       "k8s-pod/app": "kpicalculationfinalline",
       "k8s-pod/pod-template-hash": "59dff845b6"
